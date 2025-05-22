@@ -47,62 +47,70 @@
 <body>
 
 
+<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <!-- 标题 + 图标 -->
+
+          <!-- ===== 标题 + 图标 ===== -->
           <h1 class="title is-1 publication-title">
-            <img
-              src="static/images/juggling.png"
-              alt="icon"
-              style="width: 1.5em; vertical-align: middle; margin-right: 5px;"
-            >
+            <img src="static/images/juggling.png"
+                 alt="icon"
+                 style="width:1.6em;vertical-align:middle;margin-right:6px;">
             UI-NEXUS:<br>
             Towards Atomic-to-Compositional Generalization for GUI Agents
           </h1>
 
-          <!-- 内联样式：只选中作者链接 -->
+          <!-- ===== 内嵌样式 ===== -->
           <style>
-            /* 只选中 publication-authors 下的 author-block a */
-            .publication-authors .author-block a {
-              font-weight: 600;
-              white-space: nowrap;
+            /* 作者名字加粗且不换行 */
+            .publication-authors .author-block a{
+              font-weight:600;
+              white-space:nowrap;
             }
-            /* 作者整体样式 */
-            .publication-authors {
-              text-align: center;
-              font-size: 1.1rem;
-              line-height: 1.4;
-              margin-top: 0.5rem;
+            /* 作者区整体 */
+            .publication-authors{
+              text-align:center;
+              font-size:1.1rem;
+              line-height:1.4;
+              margin-top:0.6rem;      /* 标题↘作者 */
+              margin-bottom:0.65rem;  /* 作者↘按钮 */
             }
-            /* 脚注区域 */
-            .footnote-block {
-              font-size: 0.9rem;
-              margin-top: 0.25rem;
+            /* affiliation / email / 脚注微调 */
+            .affiliation-block,
+            .email-block      { display:inline-block; margin-top:0.15rem;}
+            .footnote-block   { font-size:0.9rem; }
+
+            /* 按钮容器与按钮本身 */
+            .publication-links{ margin-top:0; }      /* 已在作者区留了间距 */
+            .publication-links .button{
+              margin:0.25rem 0.3rem;  /* 水平&垂直间距 */
+              display:inline-flex; align-items:center;
+              gap:0.35em;             /* 图标与文字间距 */
             }
           </style>
 
-          <!-- 作者区 -->
-          <div class="publication-authors is-size-5">
+          <!-- ===== 作者区 ===== -->
+          <div class="publication-authors">
             <span class="author-block">
-              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,
+              <a href="YOUR_LINK_1" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,
             </span>
             <span class="author-block">
-              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,
+              <a href="YOUR_LINK_2" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,
+              <a href="YOUR_LINK_3" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,
+              <a href="YOUR_LINK_4" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,
+              <a href="YOUR_LINK_5" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup>
+              <a href="YOUR_LINK_6" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup>
             </span>
             <br>
             <span class="affiliation-block">
@@ -114,15 +122,41 @@
               yuanguo2004@gmail.com,&nbsp;&nbsp;zhangzs@sjtu.edu.cn
             </span>
             <div class="footnote-block">
-              <sup>*</sup>Work done during Yuan’s internship at Langboat Technology<br>
+              <sup>*</sup>Work done during Yuan’s internship at Langboat Technology&nbsp;&nbsp;
               <sup>†</sup>Corresponding author
             </div>
           </div>
+
+          <!-- ===== 按钮区 ===== -->
+          <div class="publication-links buttons is-centered">
+            <a class="external-link button is-normal is-rounded is-dark"
+               href="LINK_TO_PAPER" target="_blank">
+               <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+            </a>
+
+            <a class="external-link button is-normal is-rounded is-dark"
+               href="static/pdfs/supplementary_material.pdf" target="_blank">
+               <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+            </a>
+
+            <a class="external-link button is-normal is-rounded is-dark"
+               href="https://github.com/YOUR_REPO" target="_blank">
+               <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+            </a>
+
+            <a class="external-link button is-normal is-rounded is-dark"
+               href="https://arxiv.org/abs/ARXIV_ID" target="_blank">
+               <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ============ /HERO ============ -->
+
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
