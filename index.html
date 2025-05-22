@@ -52,61 +52,86 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <!-- 插入图标 -->
+          <!-- 标题 + 图标 -->
           <h1 class="title is-1 publication-title">
-            <img src="static/images/juggling.png" alt="icon" style="width: 1.5em; vertical-align: middle; margin-right: 5px;">
-            UI-NEXUS:<br>Towards Atomic-to-Compositional Generalization for GUI Agents
+            <img
+              src="static/images/juggling.png"
+              alt="icon"
+              style="width: 1.5em; vertical-align: middle; margin-right: 5px;"
+            >
+            UI-NEXUS:<br>
+            Towards Atomic-to-Compositional Generalization for GUI Agents
           </h1>
-          <div class="is-size-5 publication-authors">
-<style>
-  /* 让作者名字加粗并保持在⼀行内 */
-  .author-block a   { font-weight: 600; white-space: nowrap; }
-  /* 让整体居中、字号与原模板一致（可按需调） */
-  .publication-authors { text-align: center; font-size: 1.1rem; line-height: 1.4; }
-  /* 脚注区域稍微缩⼩字体 */
-  .footnote-block { font-size: 0.9rem; margin-top: 0.25rem; }
-</style>
 
-<div class="publication-authors">
-  <!-- 作者 + 上标 -->
-  <span class="author-block">
-    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,
-  </span>
-  <span class="author-block">
-    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,
-  </span>
-  <span class="author-block">
-    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,
-  </span>
-  <span class="author-block">
-    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,
-  </span>
-  <span class="author-block">
-    <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,
-  </span>
-  <span class="author-block">
-    <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup>
-  </span>
+          <!-- 内联样式：只选中作者链接 -->
+          <style>
+            /* 只选中 publication-authors 下的 author-block a */
+            .publication-authors .author-block a {
+              font-weight: 600;
+              white-space: nowrap;
+            }
+            /* 作者整体样式 */
+            .publication-authors {
+              text-align: center;
+              font-size: 1.1rem;
+              line-height: 1.4;
+              margin-top: 0.5rem;
+            }
+            /* 脚注区域 */
+            .footnote-block {
+              font-size: 0.9rem;
+              margin-top: 0.25rem;
+            }
+          </style>
 
-  <!-- 机构 -->
-  <br>
-  <span class="affiliation-block">
-    <sup>1</sup>Shanghai&nbsp;Jiao&nbsp;Tong&nbsp;University&nbsp;&nbsp;
-    <sup>2</sup>Langboat&nbsp;Technology
-  </span>
+          <!-- 作者区 -->
+          <div class="publication-authors is-size-5">
+            <span class="author-block">
+              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup>
+            </span>
+            <br>
+            <span class="affiliation-block">
+              <sup>1</sup>Shanghai&nbsp;Jiao&nbsp;Tong&nbsp;University&nbsp;&nbsp;
+              <sup>2</sup>Langboat&nbsp;Technology
+            </span>
+            <br>
+            <span class="email-block">
+              yuanguo2004@gmail.com,&nbsp;&nbsp;zhangzs@sjtu.edu.cn
+            </span>
+            <div class="footnote-block">
+              <sup>*</sup>Work done during Yuan’s internship at Langboat Technology<br>
+              <sup>†</sup>Corresponding author
+            </div>
+          </div>
 
-  <!-- 邮箱（可选）-->
-  <br>
-  <span class="email-block">
-    yuanguo2004@gmail.com,&nbsp;&nbsp;zhangzs@sjtu.edu.cn
-  </span>
+          <!-- 按钮区 -->
+          <div class="buttons is-centered" style="margin-top:1.5rem;">
+            <a class="button is-link" href="LINK_TO_PAPER"      target="_blank">Paper</a>
+            <a class="button is-link" href="LINK_TO_SUPPLEMENT" target="_blank">Supplementary</a>
+            <a class="button is-link" href="LINK_TO_CODE"       target="_blank">Code</a>
+            <a class="button is-link" href="LINK_TO_ARXIV"      target="_blank">arXiv</a>
+          </div>
 
-  <!-- 脚注 -->
-  <div class="footnote-block">
-    <sup>*</sup>Work done during Yuan’s internship at Langboat Technology<br>
-    <sup>†</sup>Corresponding author
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
