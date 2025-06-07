@@ -13,7 +13,6 @@
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
@@ -23,19 +22,24 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>UI-NEXUS</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- 保持图片原比例 -->
+  <style>
+    figure.image img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -45,7 +49,6 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
 
 <!-- ============ HERO ============ -->
 <section class="hero">
@@ -65,91 +68,39 @@
 
           <!-- ===== 内嵌样式 ===== -->
           <style>
-            /* 作者名字加粗且不换行 */
-            .publication-authors .author-block a{
-              font-weight:600;
-              white-space:nowrap;
-            }
-            /* 作者区整体 */
-            .publication-authors{
-              text-align:center;
-              font-size:1.1rem;
-              line-height:1.4;
-              margin-top:0.6rem;      /* 标题↘作者 */
-              margin-bottom:0.65rem;  /* 作者↘按钮 */
-            }
-            /* affiliation / email / 脚注微调 */
-            .affiliation-block,
-            .email-block      { display:inline-block; margin-top:0.15rem;}
-            .footnote-block   { font-size:0.9rem; }
-
-            /* 按钮容器与按钮本身 */
-            .publication-links{ margin-top:0; }      /* 已在作者区留了间距 */
-            .publication-links .button{
-              margin:0.25rem 0.3rem;  /* 水平&垂直间距 */
-              display:inline-flex; align-items:center;
-              gap:0.35em;             /* 图标与文字间距 */
-            }
+            .publication-authors .author-block a{font-weight:600;white-space:nowrap;}
+            .publication-authors{ text-align:center;font-size:1.1rem;line-height:1.4;margin-top:0.6rem;margin-bottom:0.65rem;}
+            .affiliation-block,.email-block{ display:inline-block;margin-top:0.15rem;}
+            .footnote-block{ font-size:0.9rem;}
+            .publication-links{ margin-top:0;}
+            .publication-links .button{ margin:0.25rem 0.3rem;display:inline-flex;align-items:center;gap:0.35em;}
           </style>
 
           <!-- ===== 作者区 ===== -->
           <div class="publication-authors">
-            <span class="author-block">
-              <a href="YOUR_LINK_1" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,
-            </span>
-            <span class="author-block">
-              <a href="YOUR_LINK_2" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="YOUR_LINK_3" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="YOUR_LINK_4" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="YOUR_LINK_5" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="YOUR_LINK_6" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup>
-            </span>
+            <span class="author-block"><a href="YOUR_LINK_1" target="_blank">Yuan&nbsp;Guo</a><sup>1,2*</sup>,</span>
+            <span class="author-block"><a href="YOUR_LINK_2" target="_blank">Tingjia&nbsp;Miao</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="YOUR_LINK_3" target="_blank">Zheng&nbsp;Wu</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="YOUR_LINK_4" target="_blank">Pengzhou&nbsp;Cheng</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="YOUR_LINK_5" target="_blank">Ming&nbsp;Zhou</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="YOUR_LINK_6" target="_blank">Zhuosheng&nbsp;Zhang</a><sup>1†</sup></span>
             <br>
-            <span class="affiliation-block">
-              <sup>1</sup>Shanghai&nbsp;Jiao&nbsp;Tong&nbsp;University&nbsp;&nbsp;
-              <sup>2</sup>Langboat&nbsp;Technology
-            </span>
-            <br>
-            <span class="email-block">
-              yuanguo2004@gmail.com,&nbsp;&nbsp;zhangzs@sjtu.edu.cn
-            </span>
-            <div class="footnote-block">
-              <sup>*</sup>Work done during Yuan’s internship at Langboat Technology&nbsp;&nbsp;
-              <sup>†</sup>Corresponding author
-            </div>
+            <span class="affiliation-block"><sup>1</sup>Shanghai&nbsp;Jiao&nbsp;Tong&nbsp;University&nbsp;&nbsp;<sup>2</sup>Langboat&nbsp;Technology</span>
+            <br><span class="email-block">yuanguo2004@gmail.com,&nbsp;&nbsp;zhangzs@sjtu.edu.cn</span>
+            <div class="footnote-block"><sup>*</sup>Work done during Yuan’s internship at Langboat Technology&nbsp;&nbsp;<sup>†</sup>Corresponding author</div>
           </div>
 
           <!-- ===== 按钮区 ===== -->
-        <div class="publication-links buttons is-centered">
-          <a class="external-link button is-normal is-rounded is-dark"
-             href="LINK_TO_PAPER" target="_blank">
-             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
-          </a>
-
-          <a class="external-link button is-normal is-rounded is-dark"
-             href="https://arxiv.org/abs/ARXIV_ID" target="_blank">
-             <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
-          </a>
-
-          <a class="external-link button is-normal is-rounded is-dark"
-             href="https://github.com/StarWalkin/UI-NEXUS" target="_blank">
-             <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
-          </a>
-
-          <a class="external-link button is-normal is-rounded is-dark"
-             href="https://github.com/StarWalkin/UI-NEXUS/data" target="_blank">
-             <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Task Collection</span>
-          </a>
-        </div>
-
+          <div class="publication-links buttons is-centered">
+            <a class="external-link button is-normal is-rounded is-dark" href="LINK_TO_PAPER" target="_blank">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span></a>
+            <a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/ARXIV_ID" target="_blank">
+              <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a>
+            <a class="external-link button is-normal is-rounded is-dark" href="https://github.com/StarWalkin/UI-NEXUS" target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a>
+            <a class="external-link button is-normal is-rounded is-dark" href="https://github.com/StarWalkin/UI-NEXUS/data" target="_blank">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Task Collection</span></a>
+          </div>
 
         </div>
       </div>
@@ -158,21 +109,18 @@
 </section>
 <!-- ============ /HERO ============ -->
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h1 class="title has-text-centered">Introduction and Demo Video</h1>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4" type="video/mp4">
       </video>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
-
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -205,89 +153,49 @@
     </h2>
 
     <!-- 概览图 -->
-    <figure class="image is-3by1 mb-5">
-      <img src="static/images/main_fig_update_01.png"
-           alt="UI-NEXUS overview graphic (placeholder)">
+    <figure class="image mb-5">
+      <img src="static/images/main_fig_update_01.png" alt="UI-NEXUS overview graphic">
     </figure>
 
     <!-- 三种任务类型说明 -->
     <div class="content has-text-justified">
-      <p>Towards system-level task automation, we categorize compositional mobile
-        operation tasks into three types according to subtask dependency structures:</p>
-
+      <p>Towards system-level task automation, we categorize compositional mobile operation tasks into three types according to subtask dependency structures:</p>
       <ul>
-        <li>
-          <em>Simple Concatenation</em>: A sequence of subtasks
-          that are executed independently without
-          cross-subtask state dependencies. 
-        </li>
-
-        <li>
-          <em>Context Transition</em>: A composition where certain subtasks
-          depend on the outcome states of others. 
-        </li>
-
-        <li>
-          <em>Deep Dive</em>: A special case of context transition where
-          intermediate reasoning (e.g. text summarization, mathematical reasoning, VQA) beyond direct state transitions is required.
-        </li>
+        <li><em>Simple Concatenation</em>: A sequence of subtasks that are executed independently without cross-subtask state dependencies.</li>
+        <li><em>Context Transition</em>: A composition where certain subtasks depend on the outcome states of others.</li>
+        <li><em>Deep Dive</em>: A special case of context transition where intermediate reasoning (e.g.&nbsp;text summarization, mathematical reasoning, VQA) beyond direct state transitions is required.</li>
       </ul>
     </div>
 
-
-    <figure class="image is-3by1 mb-5">
-      <img src="static/images/Overview.png"
-           alt="Task-dependency illustration (placeholder)">
+    <figure class="image mb-5">
+      <img src="static/images/Overview.png" alt="Task-dependency illustration">
     </figure>
 
     <!-- 进一步说明 -->
     <div class="content has-text-justified">
-      <p>
-        UI-NEXUS features comprehensive coverage of applications and task
-        scenarios, systematic analysis of subtask dependencies, diverse
-        evaluation metrics, and supports both fully controllable offline
-        evaluations and real-world online tests. UI-NEXUS is built upon our
-        unified plug-and-play framework that seamlessly integrates heterogeneous
-        agents and devices.
-      </p>
-      <p>
-        To provide a scalable development toolkit, we implement an emulator
-        initialization script that can easily set up the inner state of local
-        utility apps via a JSON configuration file.
-      </p>
+      <p>UI-NEXUS features comprehensive coverage of applications and task scenarios, systematic analysis of subtask dependencies, diverse evaluation metrics, and supports both fully controllable offline evaluations and real-world online tests. UI-NEXUS is built upon our unified plug-and-play framework that seamlessly integrates heterogeneous agents and devices.</p>
+      <p>To provide a scalable development toolkit, we implement an emulator initialization script that can easily set up the inner state of local utility apps via a JSON configuration file.</p>
     </div>
 
     <!-- 工具链示意图 -->
-    <figure class="image is-3by1 mb-5">
-      <img src="static/images/results.png"
-           alt="Toolkit initialization diagram (placeholder)">
+    <figure class="image mb-5">
+      <img src="static/images/results.png" alt="Toolkit initialization diagram">
     </figure>
 
-    <p class="has-text-weight-semibold">
-      UI-NEXUS poses substantial challenges on all five mobile-agent baselines,
-      with no agent exceeding a task-success rate of 50 % on all subsets.
-    </p>
+    <p class="has-text-weight-semibold">UI-NEXUS poses substantial challenges on all five mobile-agent baselines, with no agent exceeding a task-success rate of 50&nbsp;% on all subsets.</p>
   </div>
 </section>
-
-
 
 <!-- ============ AGENT-NEXUS ============ -->
 <section class="section has-background-light">
   <div class="container is-max-desktop">
 
-    <!-- 标题 -->
-    <h2 class="title has-text-centered is-3">
-      AGENT-NEXUS: Systematic Scheduling for Compositional Task Automation
-    </h2>
+    <h2 class="title has-text-centered is-3">AGENT-NEXUS: Systematic Scheduling for Compositional Task Automation</h2>
 
-    <!-- 系统结构图 -->
-    <figure class="image is-3by1 mb-5">
-      <img src="static/images/agent_illustration.png"
-           alt="AGENT-NEXUS architecture (placeholder)">
+    <figure class="image mb-5">
+      <img src="static/images/agent_illustration.png" alt="AGENT-NEXUS architecture">
     </figure>
 
-    <!-- Demo 视频 -->
     <h3 class="title is-4 has-text-centered">Demo Video</h3>
 
     <div class="columns is-centered">
@@ -308,29 +216,25 @@
   </div>
 </section>
 
-
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTex Code Here</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
@@ -338,10 +242,9 @@
 </footer>
 
 <!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- Add your tracker here if needed -->
+<!-- End of Statcounter Code -->
 
-    <!-- End of Statcounter Code -->
+</body>
+</html>
 
-  </body>
-  </html>
