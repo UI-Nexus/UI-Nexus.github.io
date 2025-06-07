@@ -129,7 +129,7 @@
         <div class="content has-text-justified">
           <p>
             Autonomous agents powered by multimodal large language models have been developed to facilitate task execution on mobile devices. However, prior work has predominantly focused on atomic tasks&mdash;such as short-chain execution tasks and single-screen grounding tasks&mdash;while overlooking the generalization to compositional tasks, which are indispensable for real-world applications.  
-            This work introduces <strong>UI-NEXUS</strong>, a comprehensive benchmark designed to evaluate mobile agents on three categories of compositional operations: <em class="highlight-blue">Simple Concatenation</em>, <em class="highlight-blue">Context Transition</em>, and <em class="highlight-blue">Deep Dive</em>.  
+            This work introduces <strong>UI-NEXUS</strong>, a comprehensive benchmark designed to evaluate mobile agents on three categories of compositional operations: Simple Concatenation, Context Transition, and Deep Dive.  
             UI-NEXUS supports interactive evaluation in 20 fully controllable local utility app environments, as well as 30 online Chinese and English service apps. It comprises 100 interactive task templates with an average optimal step count of 13.44.  
             Experimental results across a range of mobile agents with agentic workflow or agent-as-a-model show that UI-NEXUS presents significant challenges. Specifically, existing agents generally struggle to balance performance and efficiency, exhibiting representative failure modes such as under-execution, over-execution, and attention drift, causing a visible atomic-to-compositional generalization gap.  
             Inspired by these findings, we propose <strong>Agent-NEXUS</strong>, a lightweight and efficient scheduling system to tackle compositional mobile tasks. Agent-NEXUS extrapolates the abilities of existing mobile agents by dynamically decomposing long-horizon tasks into a series of self-contained atomic subtasks.  
@@ -172,15 +172,14 @@
     <!-- 进一步说明 -->
     <div class="content has-text-justified">
       <p>UI-NEXUS features comprehensive coverage of applications and task scenarios, systematic analysis of subtask dependencies, diverse evaluation metrics, and supports both fully controllable offline evaluations and real-world online tests. UI-NEXUS is built upon our unified plug-and-play framework that seamlessly integrates heterogeneous agents and devices.</p>
-      <p>To provide a scalable development toolkit, we implement an emulator initialization script that can easily set up the inner state of local utility apps via a JSON configuration file.</p>
+      <p>To provide a scalable development toolkit, we implement an <em class="highlight-blue">emulator initialization script</em> that can easily set up the inner state of local utility apps via a JSON configuration file.</p>
     </div>
 
     <!-- 工具链示意图 -->
     <figure class="image mb-5">
-      <img src="static/images/results_onlyagent_v2.jpg" alt="Toolkit initialization diagram">
+      <img src="static/images/results_onlyagent.jpg" alt="Toolkit initialization diagram">
     </figure>
 
-    <p class="has-text-weight-semibold">UI-NEXUS poses substantial challenges on all five mobile-agent baselines, with no agent exceeding a task-success rate of 50&nbsp;% on all subsets.</p>
   </div>
 </section>
 
@@ -206,7 +205,7 @@
     <!-- ====== 第 1 个任务 ====== -->
     <div class="columns is-centered">
       <div class="column is-8">
-        <p class="mb-2"><strong>Task Instruction::</strong> Search for the Starbucks Americano on both Meituan and Ele.me, then place an order on the platform with the lowest price, and stay on the order confirmation page.</p>
+        <p class="mb-2"><strong>Task Instruction:</strong> Search for the Starbucks Americano on both Meituan and Ele.me, then place an order on the platform with the lowest price, and stay on the order confirmation page.</p>
         <video controls muted loop style="width:100%;">
           <source src="static/videos/demo1.mp4" type="video/mp4">
         </video>
