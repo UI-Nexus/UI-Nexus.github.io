@@ -33,12 +33,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <!-- 保持图片原比例 -->
+  <!-- 全局图片比例 & 亮蓝色高亮 -->
   <style>
-    figure.image img {
-      width: 100%;
-      height: auto;
-    }
+    figure.image img{width:100%;height:auto;}
+    .highlight-blue{color:#2E8BFF;} /* 亮蓝 */
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -131,7 +129,7 @@
         <div class="content has-text-justified">
           <p>
             Autonomous agents powered by multimodal large language models have been developed to facilitate task execution on mobile devices. However, prior work has predominantly focused on atomic tasks&mdash;such as short-chain execution tasks and single-screen grounding tasks&mdash;while overlooking the generalization to compositional tasks, which are indispensable for real-world applications.  
-            This work introduces <strong>UI-NEXUS</strong>, a comprehensive benchmark designed to evaluate mobile agents on three categories of compositional operations: <em>Simple Concatenation</em>, <em>Context Transition</em>, and <em>Deep Dive</em>.  
+            This work introduces <strong>UI-NEXUS</strong>, a comprehensive benchmark designed to evaluate mobile agents on three categories of compositional operations: <em class="highlight-blue">Simple Concatenation</em>, <em class="highlight-blue">Context Transition</em>, and <em class="highlight-blue">Deep Dive</em>.  
             UI-NEXUS supports interactive evaluation in 20 fully controllable local utility app environments, as well as 30 online Chinese and English service apps. It comprises 100 interactive task templates with an average optimal step count of 13.44.  
             Experimental results across a range of mobile agents with agentic workflow or agent-as-a-model show that UI-NEXUS presents significant challenges. Specifically, existing agents generally struggle to balance performance and efficiency, exhibiting representative failure modes such as under-execution, over-execution, and attention drift, causing a visible atomic-to-compositional generalization gap.  
             Inspired by these findings, we propose <strong>Agent-NEXUS</strong>, a lightweight and efficient scheduling system to tackle compositional mobile tasks. Agent-NEXUS extrapolates the abilities of existing mobile agents by dynamically decomposing long-horizon tasks into a series of self-contained atomic subtasks.  
@@ -161,14 +159,14 @@
     <div class="content has-text-justified">
       <p>Towards system-level task automation, we categorize compositional mobile operation tasks into three types according to subtask dependency structures:</p>
       <ul>
-        <li><em>Simple Concatenation</em>: A sequence of subtasks that are executed independently without cross-subtask state dependencies.</li>
-        <li><em>Context Transition</em>: A composition where certain subtasks depend on the outcome states of others.</li>
-        <li><em>Deep Dive</em>: A special case of context transition where intermediate reasoning (e.g.&nbsp;text summarization, mathematical reasoning, VQA) beyond direct state transitions is required.</li>
+        <li><em class="highlight-blue">Simple Concatenation</em>: A sequence of subtasks that are executed independently without cross-subtask state dependencies.</li>
+        <li><em class="highlight-blue">Context Transition</em>: A composition where certain subtasks depend on the outcome states of others.</li>
+        <li><em class="highlight-blue">Deep Dive</em>: A special case of context transition where intermediate reasoning (e.g.&nbsp;text summarization, mathematical reasoning, VQA) beyond direct state transitions is required.</li>
       </ul>
     </div>
 
     <figure class="image mb-5">
-      <img src="static/images/Overview_v2.png" alt="Task-dependency illustration">
+      <img src="static/images/Overview.png" alt="Task-dependency illustration">
     </figure>
 
     <!-- 进一步说明 -->
@@ -179,7 +177,7 @@
 
     <!-- 工具链示意图 -->
     <figure class="image mb-5">
-      <img src="static/images/results_v2.png" alt="Toolkit initialization diagram">
+      <img src="static/images/results.png" alt="Toolkit initialization diagram">
     </figure>
 
     <p class="has-text-weight-semibold">UI-NEXUS poses substantial challenges on all five mobile-agent baselines, with no agent exceeding a task-success rate of 50&nbsp;% on all subsets.</p>
@@ -190,10 +188,14 @@
 <section class="section has-background-light">
   <div class="container is-max-desktop">
 
-    <h2 class="title has-text-centered is-3">AGENT-NEXUS: Systematic Scheduling for Compositional Task Automation</h2>
+    <!-- 修改后的标题：主标题换行 -->
+    <h2 class="title has-text-centered is-3">
+      AGENT-NEXUS<br>
+      <span class="is-size-5">Systematic Scheduling for Compositional Task Automation</span>
+    </h2>
 
     <figure class="image mb-5">
-      <img src="static/images/agent_illustration_v2.png" alt="AGENT-NEXUS architecture">
+      <img src="static/images/agent_illustration.png" alt="AGENT-NEXUS architecture">
     </figure>
 
     <h3 class="title is-4 has-text-centered">Demo Video</h3>
@@ -247,4 +249,5 @@
 
 </body>
 </html>
+
 
