@@ -206,7 +206,7 @@
 
     <!-- 概览图 -->
     <figure class="image is-3by1 mb-5">
-      <img src="static/images/placeholder_ui_nexus_overview.png"
+      <img src="static/images/main_fig_update_01.png"
            alt="UI-NEXUS overview graphic (placeholder)">
     </figure>
 
@@ -218,35 +218,25 @@
       <ul>
         <li>
           <em>Simple Concatenation</em>: A sequence of subtasks
-          \((a_1, a_2, \ldots, a_n)\) that are executed independently without
-          cross-subtask state dependencies. The agent applies the policy
-          \(\pi\) to each subtask individually, conditioned on its local goal
-          \(g_i\).
+          that are executed independently without
+          cross-subtask state dependencies. 
         </li>
 
         <li>
           <em>Context Transition</em>: A composition where certain subtasks
-          depend on the outcome states of others. Formally, if there exists
-          \((a_i, a_j) \in \mathcal{D}\), then the input to subtask
-          \(a_j\) is the state \(s_i'\) resulting from executing \(a_i\)
-          under \(\pi\) and transition dynamics \(\mathcal{T}\).
+          depend on the outcome states of others. 
         </li>
 
         <li>
           <em>Deep Dive</em>: A special case of context transition where
-          intermediate reasoning beyond direct state transitions is required.
-          We introduce a reasoning function
-          \(\mathcal{F}: \mathcal{S} \times \mathcal{G} \rightarrow \mathcal{I}\),
-          mapping the current state and goal to latent intermediate
-          information \(\mathcal{I}\), which further guides action selection
-          under \(\pi\).
+          intermediate reasoning (e.g. text summarization, mathematical reasoning, VQA) beyond direct state transitions is required.
         </li>
       </ul>
     </div>
 
-    <!-- 任务依赖示意图 -->
+
     <figure class="image is-3by1 mb-5">
-      <img src="static/images/placeholder_dependency_types.png"
+      <img src="static/images/Overview.png"
            alt="Task-dependency illustration (placeholder)">
     </figure>
 
@@ -269,7 +259,7 @@
 
     <!-- 工具链示意图 -->
     <figure class="image is-3by1 mb-5">
-      <img src="static/images/placeholder_toolkit.png"
+      <img src="static/images/results"
            alt="Toolkit initialization diagram (placeholder)">
     </figure>
 
@@ -293,7 +283,7 @@
 
     <!-- 系统结构图 -->
     <figure class="image is-3by1 mb-5">
-      <img src="static/images/placeholder_agent_nexus_architecture.png"
+      <img src="static/images/agent_illustration.png"
            alt="AGENT-NEXUS architecture (placeholder)">
     </figure>
 
@@ -302,13 +292,13 @@
 
     <div class="columns is-centered">
       <div class="column is-half">
-        <video controls muted loop poster="static/images/placeholder_video_poster.png">
+        <video controls muted loop poster="static/videos/demo1.mp4">
           <source src="static/videos/placeholder_demo1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       <div class="column is-half">
-        <video controls muted loop poster="static/images/placeholder_video_poster.png">
+        <video controls muted loop poster="static/videos/demo2.mp4">
           <source src="static/videos/placeholder_demo2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
