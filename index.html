@@ -196,7 +196,127 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section">
+  <div class="container is-max-desktop">
 
+    <!-- 主标题 -->
+    <h2 class="title has-text-centered is-3">
+      UI-NEXUS: Comprehensive Benchmark for Compositional Mobile Device Operation Tasks
+    </h2>
+
+    <!-- 概览图 -->
+    <figure class="image is-3by1 mb-5">
+      <img src="static/images/placeholder_ui_nexus_overview.png"
+           alt="UI-NEXUS overview graphic (placeholder)">
+    </figure>
+
+    <!-- 三种任务类型说明 -->
+    <div class="content has-text-justified">
+      <p>Towards system-level task automation, we categorize compositional mobile
+        operation tasks into three types according to subtask dependency structures:</p>
+
+      <ul>
+        <li>
+          <em>Simple Concatenation</em>: A sequence of subtasks
+          \((a_1, a_2, \ldots, a_n)\) that are executed independently without
+          cross-subtask state dependencies. The agent applies the policy
+          \(\pi\) to each subtask individually, conditioned on its local goal
+          \(g_i\).
+        </li>
+
+        <li>
+          <em>Context Transition</em>: A composition where certain subtasks
+          depend on the outcome states of others. Formally, if there exists
+          \((a_i, a_j) \in \mathcal{D}\), then the input to subtask
+          \(a_j\) is the state \(s_i'\) resulting from executing \(a_i\)
+          under \(\pi\) and transition dynamics \(\mathcal{T}\).
+        </li>
+
+        <li>
+          <em>Deep Dive</em>: A special case of context transition where
+          intermediate reasoning beyond direct state transitions is required.
+          We introduce a reasoning function
+          \(\mathcal{F}: \mathcal{S} \times \mathcal{G} \rightarrow \mathcal{I}\),
+          mapping the current state and goal to latent intermediate
+          information \(\mathcal{I}\), which further guides action selection
+          under \(\pi\).
+        </li>
+      </ul>
+    </div>
+
+    <!-- 任务依赖示意图 -->
+    <figure class="image is-3by1 mb-5">
+      <img src="static/images/placeholder_dependency_types.png"
+           alt="Task-dependency illustration (placeholder)">
+    </figure>
+
+    <!-- 进一步说明 -->
+    <div class="content has-text-justified">
+      <p>
+        UI-NEXUS features comprehensive coverage of applications and task
+        scenarios, systematic analysis of subtask dependencies, diverse
+        evaluation metrics, and supports both fully controllable offline
+        evaluations and real-world online tests. UI-NEXUS is built upon our
+        unified plug-and-play framework that seamlessly integrates heterogeneous
+        agents and devices.
+      </p>
+      <p>
+        To provide a scalable development toolkit, we implement an emulator
+        initialization script that can easily set up the inner state of local
+        utility apps via a JSON configuration file.
+      </p>
+    </div>
+
+    <!-- 工具链示意图 -->
+    <figure class="image is-3by1 mb-5">
+      <img src="static/images/placeholder_toolkit.png"
+           alt="Toolkit initialization diagram (placeholder)">
+    </figure>
+
+    <p class="has-text-weight-semibold">
+      UI-NEXUS poses substantial challenges on all five mobile-agent baselines,
+      with no agent exceeding a task-success rate of 50 % on all subsets.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- ============ AGENT-NEXUS ============ -->
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+
+    <!-- 标题 -->
+    <h2 class="title has-text-centered is-3">
+      AGENT-NEXUS: Systematic Scheduling for Compositional Task Automation
+    </h2>
+
+    <!-- 系统结构图 -->
+    <figure class="image is-3by1 mb-5">
+      <img src="static/images/placeholder_agent_nexus_architecture.png"
+           alt="AGENT-NEXUS architecture (placeholder)">
+    </figure>
+
+    <!-- Demo 视频 -->
+    <h3 class="title is-4 has-text-centered">Demo Video</h3>
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <video controls muted loop poster="static/images/placeholder_video_poster.png">
+          <source src="static/videos/placeholder_demo1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop poster="static/images/placeholder_video_poster.png">
+          <source src="static/videos/placeholder_demo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 <!--BibTex citation -->
